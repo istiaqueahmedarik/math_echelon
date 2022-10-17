@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap");
+html,
+body {
+  padding: 0;
+  margin: 0;
+
+  font-family: "Poppins", -apple-system, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: white) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+}
+
+/* Home */
+
+.home__container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr;
+}
+.home_image {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+/* main */
+.main {
+  background: rgba(50, 213, 243, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(50, 213, 243, 0.3);
+  margin: 2%;
+}
+.title {
+  text-align: center;
+  border-radius: 78% 22% 79% 21% / 42% 45% 55% 58%;
+
+  width: fit-content;
+  margin: auto;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  background-color: #00dbde;
+  background-image: linear-gradient(90deg, #00dbde 0%, #fc00ff 100%);
+
+  color: white;
+  margin-top: 2%;
+  font-weight: bolder;
+}
+.input__area {
+  /* display: grid;
+  justify-content: space-around;
+  grid-template-columns: 1fr 1fr;
+  gap: 10%; */
+}
+.value__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10%;
+}
+.input__areaTwo {
+  /* display: grid;
+  justify-content: space-around;
+  grid-template-columns: 1fr;
+  gap: 10%; */
+}
+.each__input {
+  display: flex;
+  margin: 4%;
+}
+.number {
+  margin-left: 2%;
+  margin-right: 2%;
+}
+form.form__container {
+  display: grid;
+  margin: auto;
+}
+
+input.form__input,
+.each__input__form {
+  margin: 5%;
+  /* border-radius: 59%; */
+  height: 5vh;
+  border-radius: 10px;
+  border: none;
+  /* box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px; */
+  padding-left: 6%;
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+  /* border: 2px solid white; */
+}
+input.form__input:focus {
+  outline: none;
+}
+.each__input__form:focus {
+  outline: none;
+}
+.each__input__form {
+  margin: 0 !important;
+}
+.form__button__rows {
+  border: none;
+  width: fit-content;
+  padding: 2%;
+  border-radius: 10px;
+  background-color: #21d4fd;
+  background-image: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);
+
+  color: white;
+  font-weight: bolder;
+  margin: 3%;
+  cursor: pointer;
+
+  box-shadow: rgba(210, 215, 221, 0.1) 0px 10px 10px -10px;
+}
+.Input {
+  display: grid;
+  place-content: center;
+  width: fit-content;
+  margin: auto;
+  /* max-width: 90%; */
+  grid-template-columns: 1fr 1fr;
+  /* margin-right: 6%; */
+  gap: 10%;
+  margin-bottom: 5%;
+}
+.constant__part {
+  /* display: flex; */
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+.section {
+  display: grid;
+}
+.main__button {
+  display: grid;
+  width: 50% !important;
+  background-color: #08aeea;
+  background-image: linear-gradient(0deg, #08aeea 0%, #2af598 100%);
+  cursor: pointer;
+  margin: auto;
+}
+@import url("https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap");
+.eqContainer,
+.answer-container {
+  text-align: center;
+  border-radius: 10px;
+  margin: 2%;
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  font-family: "Fuzzy Bubbles", cursive;
+}
+.answer-container {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+}
+.main {
+  overflow: scroll;
+}
+.main::-webkit-scrollbar {
+  display: none;
+}
+.equalto {
+  margin-right: 5%;
+}
+@media only screen and (max-width: 991px) {
+  .home_image {
+    display: none;
+  }
+  .home__container {
+    grid-template-columns: 1fr;
+  }
+  .value__container {
+    display: flex;
+    flex-direction: column;
+  }
+  .Input {
+    grid-template-columns: 1fr;
+  }
+  .constant__part {
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 5%;
+  }
+  .section {
+    margin-bottom: 5%;
+  }
+}
