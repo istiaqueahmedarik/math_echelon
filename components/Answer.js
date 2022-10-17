@@ -17,7 +17,7 @@ console.log(value)
               {m.map((k,l)=>{
                 return(
                   <>
-                  + {(Math.round(k * 100) / 100).toFixed(2)}x<sub>{l+1}</sub><sup>{"'".repeat(j)}</sup>
+                  + {(Math.round(k * 100) / 100).toFixed(2)}x<sub>{l+1}</sub>
                   </>
                 )
               })}
