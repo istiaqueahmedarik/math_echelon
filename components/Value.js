@@ -1,6 +1,5 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
-import ReactTooltip from 'react-tooltip';
 import Answer from "./Answer";
 function Value({rows}) {
     const [value,setValue] = useState([])
@@ -64,9 +63,9 @@ function Value({rows}) {
 
                 required
               />
-              <ReactTooltip id='input1' place="bottom" type="dark" textColor='#5F4B8BFF' backgroundColor='#E69A8DFF' effect="solid">
+              {/* <ReactTooltip id='input1' place="bottom" type="dark" textColor='#5F4B8BFF' backgroundColor='#E69A8DFF' effect="solid">
               {`X${columnIndex+1} in row ${rowIndex+1}`}
-              </ReactTooltip>
+              </ReactTooltip> */}
               {/* <div className='number'>X<sub>{columnIndex+1}</sub></div> */}
             </div>
           ))}
@@ -87,15 +86,15 @@ function Value({rows}) {
                 type="number"
                 onChange={e => handleChanget(rowIndex, columnIndex, e)}
                 className="each__input__form"
-                placeholder={`C${columnIndex+1} in row ${rowIndex+1}`}
+                placeholder={`C${columnIndex+1} in row ${columnIndex+1}`}
                 value={matrixt[rowIndex][columnIndex]}
                 data-tip data-for='input'
                 
                 required
               />
-              <ReactTooltip id='input' place="bottom" type="dark" textColor='#5F4B8BFF' backgroundColor='#E69A8DFF' effect="solid">
+              {/* <ReactTooltip id='input' place="bottom" type="dark" textColor='#5F4B8BFF' backgroundColor='#E69A8DFF' effect="solid">
               {`C${columnIndex+1} in row ${rowIndex+1}`}
-              </ReactTooltip>
+              </ReactTooltip> */}
               {/* <div className='number'>C<sub>{columnIndex+1}</sub></div> */}
 
             </div>
